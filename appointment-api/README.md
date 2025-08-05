@@ -73,7 +73,16 @@ If you notice warning
 
 Once deployed, you can access the API at the URL provided by Google Cloud Run. You can use tools like Postman or curl to interact with the API endpoints.
 
-## Endpoints
+## API Documentation
+You can access the API documentation at: <cloud run URL>/appoiment/swagger.html
+You can also access the OpenAPI specification at: <cloud run URL>/appoiment/api-docs
+Curl command to access the healthcheck endpoint :
+```bash
+curl <cloud run URL>/appointment/healthcheck
+```
+you would see a response like alive...
+## API Endpoints
+
 
 - `GET /appointments`: Retrieve a list of appointments.
 - `POST /appointments`: Create a new appointment.
